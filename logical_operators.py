@@ -11,9 +11,21 @@ if temp > 35 or temp < 0 or is_raining:
 else:
     print("The outdoor conditions are suitable for a picnic.")
 
-temp = 25
-is_sunny = True
+temp = 22
+is_sunny = False
 
-if temp >= 28 and is_sunny:
+if temp >= 22 and is_sunny:
     print("The outdoor conditions are suitable for a picnic.")
     print("it is a sunny day")
+elif temp <= 0 and is_sunny:
+    print("The outdoor conditions are not suitable for a picnic.")
+    print("it is a sunny day")
+elif 28 > temp > 0 and is_sunny:
+    print("The outdoor conditions are suitable but warm.")
+    print("it is a sunny day")
+elif temp <= 0 and not is_sunny:
+    print("The outdoor conditions are not suitable for a picnic.")
+    print("it is not a sunny day")
+elif 28 > temp > 0 and not is_sunny:
+    print("The outdoor conditions are suitable but warm.")
+    print("it is not a sunny day")
